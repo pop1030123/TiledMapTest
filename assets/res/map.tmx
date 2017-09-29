@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.0.3" orientation="orthogonal" renderorder="right-down" width="20" height="20" tilewidth="32" tileheight="32" nextobjectid="4">
+ <tileset firstgid="1" name="barriers" tilewidth="32" tileheight="32" tilecount="36" columns="6">
+  <image source="barriers.png" width="192" height="192"/>
+ </tileset>
+ <tileset firstgid="37" name="ground" tilewidth="32" tileheight="32" tilecount="1" columns="1">
+  <image source="ground.png" width="32" height="32"/>
+ </tileset>
+ <tileset firstgid="38" name="player" tilewidth="32" tileheight="32" tilecount="1" columns="1">
+  <image source="player.png" width="32" height="32"/>
+ </tileset>
+ <tileset firstgid="39" name="star" tilewidth="32" tileheight="32" tilecount="1" columns="1">
+  <image source="star.png" width="32" height="32"/>
+ </tileset>
+ <layer name="ground" width="20" height="20">
+  <data encoding="base64" compression="zlib">
+   eJxTZWBgUB3Fo3gUj+JRPIpJxAAueznR
+  </data>
+ </layer>
+ <layer name="barriers" width="20" height="20">
+  <data encoding="base64" compression="zlib">
+   eJxjYBj6QA6IZaE0NYAKECtDaWoAETR61LxR86htnggOjG4eLjW43ECOHDZ5YvTgchMu88gNb3x+JsdcQupxhTs+PFQAADRyBXU=
+  </data>
+ </layer>
+ <layer name="stars" width="20" height="20">
+  <properties>
+   <property name="isStar" type="bool" value="true"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AUjIKhC9SprG4UEA8Ac/AATw==
+  </data>
+ </layer>
+ <objectgroup name="players">
+  <object id="2" name="endPoint" gid="38" x="321" y="171" width="32" height="32"/>
+  <object id="3" name="startPoint" gid="38" x="132" y="121" width="32" height="32"/>
+ </objectgroup>
+</map>
